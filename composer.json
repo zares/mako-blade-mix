@@ -1,0 +1,47 @@
+{
+    "name": "mako/app",
+    "description": "Mako Framework",
+    "keywords": [
+        "mako",
+        "framework"
+    ],
+    "homepage": "http://makoframework.com",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Frederic G. Østby",
+            "email": "frederic.g.ostby@gmail.com"
+        },
+        {
+            "name": "Contributors",
+            "homepage": "http://makoframework.com/contributors"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    },
+    "require": {
+        "php": ">=8.0.0",
+        "mako/framework": "9.1.*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+             "dev-master": "9.1-dev"
+        }
+    },
+    "suggest": {
+        "mako/open-api": "Generate OpenAPI specifications and routes",
+        "mako/repl": "A runtime developer console, interactive debugger and REPL",
+        "mako/sentry": "Log exceptions and debug information to Sentry",
+        "mako/toolbar": "A debug toolbar"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "php app/reactor app:generate-secret"
+        ]
+    }
+}
