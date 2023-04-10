@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="{{ $__charset__ }}">
+		<meta charset="utf-8">
 		<title>Mako {{mako\Mako::VERSION}}</title>
 		<style>
 			body
@@ -28,16 +28,22 @@
 				left: 50%;
 				position: absolute;
 				transform: translate(-50%, -50%);
+				background-color: #F4F4F4;
+				padding: 15px 25px;
 			}
 			.mako
 			{
-				font-size: 200px;
+				font-size: 60px;
 			}
 		</style>
+		<link rel="stylesheet" type="text/css" href="{{ mix('/assets/css/app.css') }}">
 	</head>
 	<body>
 		<div class="welcome">
-			<span class="mako"><a title="Head over to the documentation" href="https://makoframework.com/docs">MAKO</a></span>
+			<span class="mako">
+				<a title="Head over to the documentation" href="https://makoframework.com/docs">{{ $title }}</a>
+			</span>
 		</div>
+		<script src="{{ mix('/assets/js/app.js') }}"></script>
 	</body>
 </html>

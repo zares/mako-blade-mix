@@ -3,7 +3,7 @@
 namespace app\controllers;
 
 use mako\http\routing\Controller;
-use mako\view\ViewFactory;
+use package\blade\Blade;
 
 /**
  * Welcome controller.
@@ -12,12 +12,12 @@ class Index extends Controller
 {
 	/**
 	 * Welcome route.
-	 *
-	 * @param  \mako\view\ViewFactory $view View factory
+	 * @param  \package\blade\Blade $blade
 	 * @return string
 	 */
-	public function welcome(ViewFactory $view): string
+	public function welcome(Blade $blade): string
 	{
-		return $view->render('welcome');
+		return $blade->render('welcome', ['title' => 'Mako / Blade / Mix']);
 	}
+
 }
