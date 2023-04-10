@@ -144,7 +144,8 @@ return
 		],
 		'web' =>
 		[
-
+			mako\toolbar\ToolbarPackage::class,
+			package\blade\BladePackage::class,
 		],
 		'cli' =>
 		[

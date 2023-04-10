@@ -1,0 +1,9 @@
+{
+    "name": "package/blade",
+    "description": "Blade template engine",
+    "autoload": {
+        "psr-4": {
+            "package\\blade\\": "src"
+        }
+    }
+}

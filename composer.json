@@ -24,8 +24,19 @@
     },
     "require": {
         "php": ">=8.0.0",
-        "mako/framework": "9.1.*"
+        "mako/framework": "9.1.*",
+        "mako/toolbar": "^6.0",
+        "package/blade": "*"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "package/blade",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
