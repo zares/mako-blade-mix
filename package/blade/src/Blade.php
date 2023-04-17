@@ -71,7 +71,9 @@ class Blade extends BladeOne
         $subPath = 'vendor/package/'. $package;
 
         $templatePath = str_replace(
-            'app', $subPath, $this->options['views']
+            DIRECTORY_SEPARATOR .'app', 
+            DIRECTORY_SEPARATOR . $subPath, 
+            $this->options['views']
         );
 
         $this->templatePath = [$templatePath];

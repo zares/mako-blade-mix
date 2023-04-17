@@ -41,7 +41,7 @@
     "prefer-stable": true,
     "extra": {
         "branch-alias": {
-             "dev-master": "9.1-dev"
+             "dev-master": "9.2-dev"
         }
     },
     "suggest": {
