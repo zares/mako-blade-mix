@@ -15,6 +15,8 @@ use mako\toolbar\ToolbarMiddleware;
 
 //$dispatcher->setMiddlewareAsGlobal([AccessControl::class]);
 
-$dispatcher->registerMiddleware('toolbar', ToolbarMiddleware::class);
-$dispatcher->setMiddlewarePriority(['toolbar' => 1]);
-$dispatcher->setMiddlewareAsGlobal(['toolbar']);
+if (mako\env('MAKO_ENV') == 'development') {
+    $dispatcher->registerMiddleware('toolbar', ToolbarMiddleware::class);
+    $dispatcher->setMiddlewarePriority(['toolbar' => 1]);
+    $dispatcher->setMiddlewareAsGlobal(['toolbar']);
+}

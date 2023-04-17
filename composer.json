@@ -24,7 +24,7 @@
     },
     "require": {
         "php": ">=8.0.0",
-        "mako/framework": "9.1.*",
+        "mako/framework": "9.2.*",
         "mako/toolbar": "^6.0",
         "package/blade": "*"
     },
