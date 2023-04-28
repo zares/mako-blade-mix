@@ -36,7 +36,7 @@
 				font-size: 60px;
 			}
 		</style>
-		<link rel="stylesheet" type="text/css" href="{{ mix('/assets/css/app.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ mix('/assets/css/style.css') }}">
 	</head>
 	<body>
 		<div class="welcome">
