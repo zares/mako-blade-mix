@@ -1,7 +1,7 @@
 
 .jumbotron {
   /* should be relative path of the entry scss file */
-  background-image: url("../img/sample.jpg");
+  background-image: url("../img/background.jpg");
   background-size: cover;
 }
 .btn-blue {

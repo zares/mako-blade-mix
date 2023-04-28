@@ -7,7 +7,9 @@
  */
 
 module.exports = {
-    content: [],
+    content: [
+        './app/resources/**/*.{html,php,js,vue}',
+    ],
     theme: {
         extend: {},
     },

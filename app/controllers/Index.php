@@ -17,7 +17,7 @@ class Index extends Controller
 	 */
 	public function welcome(Blade $blade): string
 	{
-		return $blade->render('welcome', ['title' => 'Mako / Blade / Mix']);
+		return $blade->render('index', []);
 	}
 
 }
